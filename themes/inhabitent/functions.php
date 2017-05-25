@@ -103,33 +103,33 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-function inhabitent_login_logo(){
-	echo '<style type="text/css">
-	#login h1 a {
-			background: url(' . get_template_directory_uri() . '/images/logos/inhabitent-logo-text-dark.svg) no repeat !important;
-			background-size: 300px 53px !important; width:300px !important; height: 53px !important;
-			}
-			#login .button.button-primary {
-				background-color: #248A83;
-	</style>';
-}
-add_action('login_head','inhabitent_login_logo');
+// function inhabitent_login_logo(){
+// 	echo '<style type="text/css">
+// 	#login h1 a {
+// 			background: url(' . get_template_directory_uri() . '/images/logos/inhabitent-logo-text-dark.svg) no repeat !important;
+// 			background-size: 300px 53px !important; width:300px !important; height: 53px !important;
+// 			}
+// 			#login .button.button-primary {
+// 				background-color: #248A83;
+// 	</style>';
+// }
+// add_action('login_head','inhabitent_login_logo');
 
 
 
-function inhabitent_login_logo_url(  ) {
-	return home_url();
+// function inhabitent_login_logo_url(  ) {
+// 	return home_url();
 
-}
-add_filter('login_headerurl', 'inhabitent_login_logo_url');
+// }
+// add_filter('login_headerurl', 'inhabitent_login_logo_url');
 
-/**
-* Customize the title attribute for the login logo link.
-*
-*@return string
-*/
+// /**
+// * Customize the title attribute for the login logo link.
+// *
+// *@return string
+// */
 
-function inhabitent_login_title() {
-	return 'Inhabitent';
-}
-add_filter('login_headertitle', 'inhabitent_login_title');
+// function inhabitent_login_title() {
+// 	return 'Inhabitent';
+// }
+// add_filter('login_headertitle', 'inhabitent_login_title');

@@ -27,3 +27,54 @@ function inhabitent_remove_submenus() {
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+// // Changing logo and the URL on the login logo
+
+function inhabitent_login_logo() {
+     echo '<style type="text/css">
+       #login  h1 a {
+		background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text-dark.svg) !important;
+        background-size: 300px 53px !important;
+		width: 300px ;
+		height: 53px ;
+		}
+		#login .button.button-primary {
+			background-color: #248A83;
+		}
+     </style>';
+}
+add_action('login_head', 'inhabitent_login_logo');
+
+function the_url( $url ) {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );
+
+/**
+* Customeize the title attribute for the login logo link.$_COOKIE*
+* @return string
+*/
+function inhabitent_login_title() {
+	return 'Inhabitent';
+}
+add_filter( 'login_headertitle', 'inhabitent_login_title' );
+
+//filter the product post type archive//
+
+function hwl_home_pagesize( $query )
+{
+    if ( is_admin() || ! $query->is_main_query() )
+        return;
+
+    if ( is_home() ) {
+        $query->set( 'posts_per_page', 3 );
+        return;
+    }
+
+    if ( is_post_type_archive( 'products' ) ) {
+        $query->set('post_per_page', 16);
+        $query->set('order', 'ASC');
+        $query->set('orderby','title');
+    }
+}
+add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );

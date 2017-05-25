@@ -1,0 +1,48 @@
+
+.container{
+  height:100%;
+  width:100%;
+  background: url(../../images/dark-wood@2x.png);
+  display:flex;
+   h1 {
+    color:#d99054;
+    font-size:1.2rem;
+}
+  p {
+    color:white;
+    font-size:1rem;
+  }
+}
+
+.contact {
+  padding:2rem 2rem 2rem 6rem;
+  flex-basis:25%;
+  span{
+    padding-right:1rem;
+    font-size: 1.2rem;
+  }
+
+}
+
+.business{
+padding-top: 2rem;
+padding-left: 2rem;
+flex-basis:25%;
+  .day{
+    font-weight:bold;
+  }
+
+}
+
+.footerlogo{
+  width:auto;
+  height:auto;
+  flex-basis:50%;
+}
+
+.footerimg{
+  height:auto;
+  width:auto;
+}
+
+
