@@ -78,3 +78,33 @@ function hwl_home_pagesize( $query )
     }
 }
 add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );
+
+//for about page//
+
+function about_background()
+{
+   wp_enqueue_style(
+       'custom-style',
+       get_template_directory_uri() . 'build/css/style.min.css'
+   );
+       $background = CFS()->get( ‘hero_image’ ); //E.g. #FF0000
+       $custom_css = "
+            .about-title{
+                   background-image: url({$background});
+               }";
+       wp_add_inline_style( 'custom-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'about_background' );
+
+
+
+function inhabitent_archive_title_filter($title)
+{
+    if(is_post_type_archive('product')) {
+        $title = 'Shop Stuff';
+    } elseif (is_tax('product-type')) {
+        $title = single_term_title('', false );
+    }
+    return $title;
+    }
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title_filter' );

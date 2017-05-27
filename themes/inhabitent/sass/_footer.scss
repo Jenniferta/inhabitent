@@ -1,48 +1,41 @@
 
-.container{
-  height:100%;
-  width:100%;
+.footercontainer{
   background: url(../../images/dark-wood@2x.png);
   display:flex;
    h1 {
     color:#d99054;
     font-size:1.2rem;
-}
+   }
   p {
     color:white;
-    font-size:1rem;
+    font-size:1.2rem;
   }
 }
 
-.contact {
-  padding:2rem 2rem 2rem 6rem;
-  flex-basis:25%;
-  span{
+.business{
+  margin-left:10rem;
+  margin-right:10rem;
+  display: flex
+}
+
+.contact{
+  padding:2rem;
+}
+ span{
     padding-right:1rem;
     font-size: 1.2rem;
   }
 
-}
-
-.business{
-padding-top: 2rem;
-padding-left: 2rem;
-flex-basis:25%;
+.hours{
+  padding: 2rem;
   .day{
-    font-weight:bold;
+      font-weight:bold;
+
   }
-
 }
 
-.footerlogo{
-  width:auto;
-  height:auto;
-  flex-basis:50%;
+.footer-logo img{
+  height: 40rem;
+  width: 40rem;
 }
-
-.footerimg{
-  height:auto;
-  width:auto;
-}
-
 

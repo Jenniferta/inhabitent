@@ -1,38 +1,73 @@
+h1{
+    text-align: center;
+}
 
 .hero-banner {
-    background: url("home-hero.jpg") no-repeat top;
-    background-size: cover;
     height: 975px;
     width:100%;
     display: flex;
     justify-content: center;
 }
-
-.shopcontainer{
-  text-align: center;
-  width: 1120px;
-  margin: auto;
-  h1{
-    font-size:3rem;
-  }
+.hero-background{
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url("home-hero.jpg") no-repeat top;
+    background-size: cover;
 }
 
-.stuffcategories{
-  display: flex;
+
+
+.shopstuff {
+    display: flex;
+    justify-content:center;
+    margin-left:10rem;
+    margin-right:10rem;
 }
 
-.stuff{
-  border: 0.5px solid #e1e1e1;
-  border-top: 4px solid #e1e1e1;
-  margin: 0.5rem;
-  justify-content: center;
-  align-items:center;
-  img{ height: 4.5rem;
-       padding-top: 1rem;}
-  a{
-    color: #ffffff;
-    border: #e1e1e1;
-    background-color: #248A83
-  }
+.product-info{
+    display:flex;
+    justify-content: space-between;
+    align-content:center;
+    padding:5rem;
+
+
+}
+.single-product-type {
+
+        border: 1px solid #e1e1e1;
+        border-top-width: 4px;
+        width:15rem;
+        height:15rem;
+        align-content:center;
+        justify-content:space-between;
+
+
+        img{
+            height:5rem;
+            width:5rem;
+        }
+        a{
+            text-decoration:none;
+            background-color:#248A83;
+            color:white;
+            border-color:solid #e1e1e1;
+        }
 }
 
+.featured{
+    border:1px solid #e1e1e1;
+    img{
+        height:15rem;
+        width: 15rem;
+    }
+    a{
+        color:#248A83;
+        text-decoration: none;
+    }
+}
+
+
+
+
+.site-description{
+  margin:0px;
+}

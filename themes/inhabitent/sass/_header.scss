@@ -1,10 +1,27 @@
+.site-description{
+  margin:0px;
+}
 
-.main-navigation{
-  background:transparent;
+.navlinks{
   display: flex;
-  justify-content: flex-end;
-  align-items:end;
+  justify-content: space-between;
+  margin-left:10rem;
+  margin-right:10rem;
+
   a{
-  color:green;
+    color: white;
+    padding:0.5rem;
+    font-size: 1.2rem;
+  }
+  img{
+    height: 3rem;
+    widows: 3rem;
+    padding:0.5rem;
+  }
+  span{
+    color: white;
   }
 }
+
+
+
