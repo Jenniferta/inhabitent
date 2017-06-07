@@ -1,73 +1,185 @@
-h1{
+h1 {
     text-align: center;
+    font-family: "novecentosans";
+    font-style: normal;
+    font-weight: normal;
+}
+
+.site-description {
+    margin: 0px;
 }
 
 .hero-banner {
     height: 975px;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
-.hero-background{
-    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                  url("home-hero.jpg") no-repeat top;
+
+.hero-background {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("home-hero.jpg") no-repeat top;
     background-size: cover;
 }
 
+.container {
+    margin: 0 auto;
+    width: 1120px;
+}
 
-
-.shopstuff {
+.product-info {
     display: flex;
-    justify-content:center;
-    margin-left:10rem;
-    margin-right:10rem;
-}
-
-.product-info{
-    display:flex;
     justify-content: space-between;
-    align-content:center;
-    padding:5rem;
-
-
+    align-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
+
 .single-product-type {
-
-        border: 1px solid #e1e1e1;
-        border-top-width: 4px;
-        width:15rem;
-        height:15rem;
-        align-content:center;
-        justify-content:space-between;
-
-
-        img{
-            height:5rem;
-            width:5rem;
-        }
-        a{
-            text-decoration:none;
-            background-color:#248A83;
-            color:white;
-            border-color:solid #e1e1e1;
-        }
-}
-
-.featured{
-    border:1px solid #e1e1e1;
-    img{
-        height:15rem;
-        width: 15rem;
+    border: 1px solid #e1e1e1;
+    border-top-width: 4px;
+    width: 15rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-family: "merriweather";
+    &:hover {
+        border-color: #d9905d;
     }
-    a{
-        color:#248A83;
+    img {
+        height: 5rem;
+        width: 5rem;
+    }
+    a {
         text-decoration: none;
+        background: #248A83;
+        padding: 0.75rem 1rem;
+        color: white;
+        border-color: solid #e1e1e1;
+        font-family: "novecentosans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.1rem;
+        align-content: center;
     }
 }
 
+.journal-container {
+    height: auto;
+}
 
+.featured {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
 
+.post {
+    border: 1px solid #e1e1e1;
+    flex: 0 1 32%;
+    font-family: 'novecentosans';
+    img {
+        display: block;
+    }
+    a {
+        color: #248A83;
+        letter-spacing: 2px;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+}
 
-.site-description{
-  margin:0px;
+.post p {
+    font-family: 'merriweather';
+    padding-bottom: 0;
+}
+
+.post-information {
+    padding-left: 10px;
+}
+
+.read-entry a {
+    border: 1px solid black;
+    padding: 10px 15px;
+    color: black;
+}
+
+.adventurelink {
+    button {
+        background-color: #248A83;
+        height: 4rem;
+        width: 6rem;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.adventure-section {
+    h2 {
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+        margin: 0;
+        font-family: "merriweather";
+    }
+    p {
+        color: white;
+    }
+}
+
+.adventureposts {
+    display: flex;
+}
+
+.adventurecontainer {
+    display: flex;
+    height: 30rem;
+    width: 30rem;
+}
+
+.adventure {
+    background-color: rgba (0, 0, 0, .35);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // position: absolute;
+    height: 100%;
+    max-width: 100%;
+    z-index: 1;
+    box-sizing: inherit;
+}
+
+.adventure-half-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.vertical-half-container {
+    display: flex;
+    flex: 1;
+}
+
+.adventure1 {
+    flex: 1;
+    background-image: url("../../images/canoe-girl.jpg");
+}
+
+.adventure2 {
+    background-image: url("../../images/beach-bonfire.jpg");
+}
+
+.adventure3 {
+    background-image: url("../../images/mountain-hikers.jpg");
+    flex: 1;
+}
+
+.adventure4 {
+    background-image: url("../../images/night-sky.jpg");
+    flex: 1;
 }

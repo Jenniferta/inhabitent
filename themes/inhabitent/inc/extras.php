@@ -81,21 +81,17 @@ add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );
 
 //for about page//
 
-function about_background()
-{
-   wp_enqueue_style(
-       'custom-style',
-       get_template_directory_uri() . 'build/css/style.min.css'
-   );
-       $background = CFS()->get( ‘hero_image’ ); //E.g. #FF0000
+function about_background() {
+       $background = CFS()->get( 'header_image' ); //E.g. #FF0000
        $custom_css = "
-            .about-title{
-                   background-image: url({$background});
+            .entry-header{
+                   background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$background}) no-repeat center bottom;
+                   background-size: cover;
+                   height:700px;
                }";
-       wp_add_inline_style( 'custom-style', $custom_css );
+       wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'about_background' );
-
 
 
 function inhabitent_archive_title_filter($title)
@@ -108,3 +104,5 @@ function inhabitent_archive_title_filter($title)
     return $title;
     }
 add_filter( 'get_the_archive_title', 'inhabitent_archive_title_filter' );
+
+

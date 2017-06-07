@@ -86,12 +86,14 @@ function inhabitent_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 	wp_enqueue_script('font-awesome-cdn', 'https://use.fontawesome.com/d0b4300493.js', array(), '4.7.0');
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'search', get_template_directory_uri() . '/build/js/index.js', array( 'jquery' ), '1.0.0', true );
 
+}
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-}
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
+
 
 /**
  * Custom template tags for this theme.
@@ -133,3 +135,13 @@ require get_template_directory() . '/inc/extras.php';
 // 	return 'Inhabitent';
 // }
 // add_filter('login_headertitle', 'inhabitent_login_title');
+
+function products_query( $query ){
+    if( ! is_admin()
+        && $query->is_post_type_archive( 'product' )
+        && $query->is_main_query() ){
+            $query->set( 'posts_per_page', -1 );
+    }
+}
+add_action( 'pre_get_posts', 'products_query' );
+

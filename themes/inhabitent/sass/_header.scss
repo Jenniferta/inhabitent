@@ -12,6 +12,8 @@
     color: white;
     padding:0.5rem;
     font-size: 1.2rem;
+    font-family: 'novecentosans';
+
   }
   img{
     height: 3rem;
@@ -23,5 +25,56 @@
   }
 }
 
+fieldset {
+  border:none;
+  margin:none;
+  background: none;
+}
 
+button{
+  border:none;
+  background:none;
+  box-shadow:none;
+  &:hover{
+    border-color:none;
+    box-shadow:none;
+  }
+
+}
+.main-menu{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+}
+
+.form{
+  display:inline;
+}
+.search-form .search-field{
+  display:none;
+  background-color:transparent;
+  border: none;
+  width: 100%;
+}
+
+input::placeholder {
+  color:beige;
+}
+
+label {
+  display:inline-block;
+  width: 15rem;
+}
+
+ .home .navlinks.active {
+   color: green;
+   background-color: transparent;
+   position:fixed;
+}
+
+// .home header {
+//   color: white;
+//   background-color: transparent;
+//   position:static;
+// }
 
