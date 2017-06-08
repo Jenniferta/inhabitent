@@ -1,30 +1,36 @@
+
+.post-type-archive h1.page-title{
+  padding-top: 2rem;
+  font-weight: bold;
+}
+.post-type-archive .main-navigation{
+  border-bottom: 1px solid #a1a1a1;
+}
+
 .post-type-archive .navlinks{
   background: transparent;
+  height: 52px;
   a{
   color:#248A83;
-// }
-//   img #header-logo {
-//     color:#248A83;
   }
   .icon-search{
     color:#248A83;
   }
 }
+
 .product-types-list{
   display:flex;
   text-decoration:none;
   color:#248A83;
+
 }
 
-.post-type-archive{
-  .entry-header{
-    background:none;
-  }
-}
 
 section.product-types-list{
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px dotted #a1a1a1;
 }
 
 .product-type-links a{
@@ -38,24 +44,63 @@ section.product-types-list{
 
 }
 
-.entry-header.active{
-  height:auto;
-  margin:0 0.5rem;
-  border: 0.5px solid #a1a1a1;
-  .entry-title{
-    border-top: 4px solid #a1a1a1;
-  }
-}
 .post-type-archive .shop-items{
   display: flex;
   flex-wrap: wrap;
   max-width:1120px;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
   img{
     width:250px;
     height:250px;
     position: center;
   }
 }
+
+header.entry-header{
+  height:310px;
+  width:250px;
+  background:none;
+  border: 1px solid #a1a1a1;
+  .post-info{
+    display: flex;
+  }
+  a{
+    text-decoration:none;
+    color:black;
+    font-family:'merriweather';
+    font-weight: normal;
+    font-size:1rem;
+    margin:0;
+    padding: 0.5rem 0.5rem;
+
+    &.product-image-link{
+      padding:0;
+    }
+
+  }
+
+  p{
+    margin:0;
+    color: black;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+
+}
+
+
+.post-type-archive entry-header{
+  background:none;
+  background-size:none;
+}
+
+.entry-title{
+  display: flex;
+  background-color: white;
+  margin:0;
+  padding:0;
+}
+

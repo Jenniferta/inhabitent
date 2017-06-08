@@ -1,0 +1,24 @@
+
+.single-product h1.page-title{
+  padding-top: 2rem;
+  font-weight: bold;
+}
+.single-product .main-navigation{
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.single-product .navlinks{
+  background: transparent;
+  height: 52px;
+  a{
+  color:#248A83;
+  }
+  .icon-search{
+    color:#248A83;
+  }
+}
+
+.type-product .entry-header {
+  height: initial;
+  widows: initial;
+}

@@ -38,7 +38,7 @@ get_header(); ?>
 			<?php the_posts_navigation(); ?>
 		<?php else : ?>
 			<?php get_template_part( 'template-parts/product-content', 'none' ); ?>
-		<?php endif; ?>
+		<?php endif; ?>-
 </div>
 
 		</main><!-- #main -->

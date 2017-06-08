@@ -1,41 +1,67 @@
 
-.footercontainer{
-  background: url(../../images/dark-wood@2x.png);
+.site-footer .container {
+  background: url('../../images/dark-wood@2x.png');
   display:flex;
+  font-family:'merriweather';
    h1 {
     color:#d99054;
     font-size:1.2rem;
    }
   p {
     color:white;
-    font-size:1.2rem;
+    font-size:1rem;
+  }
+  span{
+    padding:5px;
   }
 }
 
-.business{
-  margin-left:10rem;
-  margin-right:10rem;
-  display: flex
-}
+.business-info{
+  width: 1120px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
 
-.contact{
-  padding:2rem;
-}
- span{
-    padding-right:1rem;
-    font-size: 1.2rem;
+  h1{
+    font-weight: bold;
   }
-
-.hours{
-  padding: 2rem;
-  .day{
-      font-weight:bold;
-
+  p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0rem;
   }
 }
 
-.footer-logo img{
-  height: 40rem;
-  width: 40rem;
+.contact-info h1{
+  text-align: left;
+  }
+
+.contact-info p{
+    padding:0.5rem 0rem;
 }
 
+
+.hours-info{
+  min-width:400px;
+  padding-left:4rem;
+  margin: 0;
+  h1{
+    text-align:left;
+  }
+    span{
+    font-weight: bold;
+  }
+  p{
+    padding:0.25rem 0rem;
+  }
+}
+
+.logo{
+  padding-left:15rem;
+  width:600px;
+  .footer-logo{
+    width:300px;
+  }
+}

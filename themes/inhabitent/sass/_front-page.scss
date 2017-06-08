@@ -23,25 +23,27 @@ h1 {
 
 .container {
     margin: 0 auto;
-    width: 1120px;
+    min-width: 1120px;
+    padding-left: 10rem;
+    padding-right:10rem;
 }
 
-.product-info {
+section.product-info{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 0;
+
 }
 
 .single-product-type {
     border: 1px solid #e1e1e1;
     border-top-width: 4px;
-    width: 15rem;
+    width: 16rem;
     text-align: center;
-    margin: 1rem;
     padding: 0.5rem;
     font-family: "merriweather";
+    width:24%;
     &:hover {
         border-color: #d9905d;
     }
@@ -63,16 +65,13 @@ h1 {
     }
 }
 
-.journal-container {
-    height: auto;
-}
 
 .featured {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin: 0 auto;
+    min-width:1120px;
 }
 
 .post {
@@ -84,7 +83,7 @@ h1 {
     }
     a {
         color: #248A83;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-decoration: none;
         &:hover {
             color: black;
@@ -95,10 +94,19 @@ h1 {
 .post p {
     font-family: 'merriweather';
     padding-bottom: 0;
+    padding-top:1rem;
+    margin:0;
 }
 
 .post-information {
     padding-left: 10px;
+    margin:0;
+    margin-bottom: 22px;
+
+    h2{
+        margin:0;
+        font-size:1.4rem;
+    }
 }
 
 .read-entry a {
@@ -119,67 +127,85 @@ h1 {
     }
 }
 
-.adventure-section {
-    h2 {
-        color: white;
-        text-decoration: none;
-        font-size: 3rem;
-        margin: 0;
-        font-family: "merriweather";
-    }
-    p {
-        color: white;
-    }
-}
-
 .adventureposts {
     display: flex;
+    min-width: 1120px;
 }
 
-.adventurecontainer {
-    display: flex;
-    height: 30rem;
-    width: 30rem;
-}
 
 .adventure {
-    background-color: rgba (0, 0, 0, .35);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    // position: absolute;
-    height: 100%;
-    max-width: 100%;
-    z-index: 1;
-    box-sizing: inherit;
+    color: white;
+    font-family:'merriweather';
+    font-style: normal;
+    font-weight: light;
+    padding: 2.5rem 2rem 0rem 2rem;
+     p{
+        border: 1px solid;
+        width: 125px;
+        padding:6px;
+        font-size: 1rem;
+        text-align:center;
+    }
+}
+
+.adventure h1{
+    color: black;
 }
 
 .adventure-half-container {
     display: flex;
     flex: 1;
     flex-direction: column;
+    width:100%;
+    height: 600px;
+    padding: 10px 0px 10px 0px;
 }
 
 .vertical-half-container {
     display: flex;
     flex: 1;
+    width:100%;
+    padding: 0px 0px 10px 0px;
 }
+
 
 .adventure1 {
     flex: 1;
-    background-image: url("../../images/canoe-girl.jpg");
+    width:100%;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/canoe-girl.jpg") center;
+    background-size: cover, cover;
+    margin-bottom:10px;
+    padding-left: 1rem;
+    font-size: 2rem;
+
 }
 
 .adventure2 {
-    background-image: url("../../images/beach-bonfire.jpg");
+    width: 100%;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/beach-bonfire.jpg") center;
+    background-size: cover, cover;
+    font-size: 1.5rem;
+    margin-left:10px;
 }
 
 .adventure3 {
-    background-image: url("../../images/mountain-hikers.jpg");
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/mountain-hikers.jpg") center;
+    background-size: cover, cover;
     flex: 1;
+    margin-right: 5px;
+    margin-left:10px;
 }
 
 .adventure4 {
-    background-image: url("../../images/night-sky.jpg");
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/night-sky.jpg") center;
+    background-size: cover, cover;
     flex: 1;
+    margin-left:5px;
+}
+
+.adventurelink a{
+    background: #248A83;
+    padding: 10px;
+    font-family:'novecentosans';
+    font-size: 1.5rem;
 }

@@ -20,8 +20,9 @@
       </section>
   </div>
 
-  <div class="container">
-    <h1> INHABITENT JOURNAL </h1>
+  <div class="journal container">
+    <div class="journal-title">
+      <h1> INHABITENT JOURNAL </h1></div>
       <div class = "featured">
       <?php query_posts('posts_per_page=3');
         if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -37,10 +38,8 @@
        </div>
     </div>
 
-<section class="adventure-section">
-  <div>
+<section class="container">
     <h1> LATEST ADVENTURES </h1>
-  </div>
  <div class="adventureposts">
 
   <div class="adventure-half-container">
@@ -58,7 +57,7 @@
       </div>
     </div>
 
-    <div class="vertical-half-container">
+    <div class="vertical-half-container bottom-container">
       <div class="adventure adventure3">
         <div class="title"><h2>Taking in the view at Big Mountain</h2></div>
         <div class="more-link"><p>Read More</p></div>
@@ -75,10 +74,8 @@
 </div>
 
 <div class="adventurelink">
+   <p><a href src="#">More Adventures</a></p>
 
-<button>
-  <p><a href src="#">More Adventures</a></p>
-</button>
 </div>
 </section>
 
