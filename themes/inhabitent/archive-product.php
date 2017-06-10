@@ -17,7 +17,7 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+			</header>
 
 <section class="product-types-list">
   <?php $product_types = get_terms(array ('taxonomy'=>'product-type','hide_empty'=>false));
@@ -30,15 +30,20 @@ get_header(); ?>
      <?php endif; ?>
  </section>
 
-<div class="shop-items">
+<div class="shop-grid">
 			<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/product-content' ); ?>
+			<div class="shop-item">
+				<?php the_post_thumbnail( 'large' ); ?>
+				<div class="shop-detail">
+					<?php the_title(); ?>
+					<?php echo CFS()->get( 'price' ); ?>
+				</div>
+			</div>
 			<?php endwhile; ?>
-			<?php the_posts_navigation(); ?>
 		<?php else : ?>
 			<?php get_template_part( 'template-parts/product-content', 'none' ); ?>
-		<?php endif; ?>-
+		<?php endif; ?>
 </div>
 
 		</main><!-- #main -->

@@ -84,7 +84,7 @@ add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );
 function about_background() {
        $background = CFS()->get( 'header_image' ); //E.g. #FF0000
        $custom_css = "
-            .entry-header{
+            .page-template-page-about .entry-header{
                    background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$background}) no-repeat center bottom;
                    background-size: cover;
                    height:700px;

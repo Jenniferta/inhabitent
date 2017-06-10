@@ -14,8 +14,21 @@ iframe {
   margin: 0 auto;
 }
 
-.wpcf7-form-control {
-  button {
-      
-  }
+
+.site-content{
+  padding-top: 52px;
 }
+
+.page-template-default .entry-header{
+  height:auto;
+}
+
+.home .entry-header{
+  height:auto;
+}
+
+.home .site-content,
+.page-template-page-about .site-content{
+  padding-top:0;
+}
+

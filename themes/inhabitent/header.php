@@ -30,7 +30,7 @@
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 					 	<div class="navlinks">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-								<img id="header-logo" src="<?php echo get_template_directory_uri() ?>/images/inhabitent-logo-tent-white.svg" alt="">
+								<img id="header-logo" src="<?php echo get_template_directory_uri() ?>/images/inhabitent-logo-tent.svg" alt="">
 							</a>
 								<div class="main-menu">
 								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>

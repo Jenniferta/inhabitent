@@ -1,3 +1,4 @@
+
 h1 {
     text-align: center;
     font-family: "novecentosans";
@@ -23,9 +24,7 @@ h1 {
 
 .container {
     margin: 0 auto;
-    min-width: 1120px;
-    padding-left: 10rem;
-    padding-right:10rem;
+    width: 1120px;
 }
 
 section.product-info{
@@ -51,7 +50,7 @@ section.product-info{
         height: 5rem;
         width: 5rem;
     }
-    a {
+    a{
         text-decoration: none;
         background: #248A83;
         padding: 0.75rem 1rem;
@@ -78,18 +77,14 @@ section.product-info{
     border: 1px solid #e1e1e1;
     flex: 0 1 32%;
     font-family: 'novecentosans';
-    img {
-        display: block;
-    }
+   }
     a {
-        color: #248A83;
         letter-spacing: 1px;
         text-decoration: none;
         &:hover {
             color: black;
         }
     }
-}
 
 .post p {
     font-family: 'merriweather';
@@ -101,13 +96,31 @@ section.product-info{
 .post-information {
     padding-left: 10px;
     margin:0;
-    margin-bottom: 22px;
+    margin-bottom: 1.5rem;
 
     h2{
         margin:0;
         font-size:1.4rem;
+        height:4rem;
+        color:#248A83;
+    }
+
+    a {
+        color:#248A83;
     }
 }
+
+.image-post{
+    overflow: hidden;
+    height:250px;
+    width:100%;
+    border-bottom: 4px solid #a1a1a1;
+    img{
+        height:250px;
+        width:100%;
+    }
+}
+
 
 .read-entry a {
     border: 1px solid black;

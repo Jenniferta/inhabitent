@@ -16,9 +16,9 @@
       var scrollPosition = $(window).scrollTop();
       var heroHeight = $('.hero-banner').height();
       if(scrollPosition > heroHeight) {
-        $('header').addClass('active');
+        $('#masthead').addClass('active');
       } else {
-        $('header').removeClass('active');
+        $('#masthead').removeClass('active');
       }
 
     })

@@ -27,7 +27,7 @@
       <?php query_posts('posts_per_page=3');
         if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
             <div class="post">
-            <img src="<?php echo the_post_thumbnail_url(); ?>">
+            <div class="image-post"><img src="<?php echo the_post_thumbnail_url(); ?>"></div>
             <div class="post-information">
               <p><?php echo get_the_date(); ?> / <?php comments_number(); ?></p>
               <div class="title"><h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2></div>
